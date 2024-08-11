@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #eaeaea;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Program 2</h1>
+        <h4>Q:Write a program to count number of vowels, consonants, digits and special characters using function</h4>
+        <pre><code>
+def count(s):
+    v = 0
+    c = 0
+    d = 0
+    sc = 0
+    vowels = "aeiouAEIOU"
+    
+    for ch in s:
+        if ch.isdigit():
+            d += 1
+        elif ch.isalpha():
+            if ch in vowels:
+                v += 1
+            else:
+                c += 1
+        else:
+            sc += 1
+    
+    print("Vowels:", v)
+    print("Consonants:", c)
+    print("Digits:", d)
+    print("Special Characters:", sc)
+          
+
+str = input("Enter a string:")
+count(str)
+        </code></pre>
+        <a class="back-link" href="index.html">Back to Programs List</a>
+    </div>
+</body>
+</html>
